@@ -1,3 +1,10 @@
 <resources>
-      <dimen name="fab_margin">16dp</dimen>
-   </resources>
+    <!--  main  -->
+    <dimen name="buttonRadius">16dp</dimen>
+    <dimen name="iconPuddingForButtons">10dp</dimen>
+    <!--  settings  -->
+    <dimen name="iconSizeButton">20dp</dimen>
+    <dimen name="buttonTextSize">16sp</dimen>
+    <dimen name="buttonSideMargin">16dp</dimen>
+    <dimen name="buttonTopAndBottomMargin">0dp</dimen>
+</resources>

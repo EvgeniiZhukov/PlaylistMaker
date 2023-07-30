@@ -4,74 +4,104 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
-    android:orientation="vertical"
-    android:padding="20dp">
+    android:background="@color/white"
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="61dp"
         android:layout_marginTop="0dp"
         android:orientation="horizontal">
+
         <Button
-            android:id="@+id/button1"
+            android:id="@+id/buttonBack"
             android:layout_width="0dp"
-            android:layout_height="61dp"
+            android:layout_height="match_parent"
             android:layout_weight="17"
+            android:backgroundTint="@color/white"
             app:icon="@drawable/back_button_vector"
             app:iconPadding="10dp"
-            app:iconTint="#1A1B22"
-            android:backgroundTint="#ffffff"/>
+            app:iconSize="24dp"
+            app:iconTint="@color/buttonTextOrItem" />
+
         <TextView
             android:id="@+id/textView2"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="82"
+            android:gravity="center"
             android:text="@string/Settings"
-            android:textSize="22sp"
-            android:layout_weight="82"/>
+            android:textAlignment="viewStart"
+            android:textSize="26sp"
+            tools:ignore="RtlCompat" />
     </LinearLayout>
 
 
-
     <Switch
-        android:id="@+id/switch1"
+        android:id="@+id/switchTheme"
         android:layout_width="match_parent"
         android:layout_height="61dp"
-        android:text="@string/Dark_theme"
-        tools:ignore="UseSwitchCompatOrMaterialXml"
-        android:background="#ffffff"
         android:layout_marginTop="24dp"
-        android:layout_marginBottom="0dp"
-        android:textSize="16sp"/>
+        android:layout_marginBottom="@dimen/buttonTopAndBottomMargin"
+        android:background="@color/white"
+        android:text="@string/Dark_theme"
+        android:textSize="@dimen/buttonTextSize"
+        tools:ignore="UseSwitchCompatOrMaterialXml"
+        android:paddingLeft="@dimen/buttonSideMargin"
+        android:paddingRight="@dimen/buttonSideMargin"/>
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/buttonShareTheApp"
         android:layout_width="match_parent"
         android:layout_height="61dp"
+        android:layout_marginTop="@dimen/buttonTopAndBottomMargin"
+        android:layout_marginBottom="@dimen/buttonTopAndBottomMargin"
+        android:backgroundTint="@color/white"
+        android:paddingLeft="@dimen/buttonSideMargin"
+        android:paddingRight="@dimen/buttonSideMargin"
         android:text="@string/Share_the_app"
-        android:textColor="#000000"
-        android:backgroundTint="#ffffff"
-        android:layout_marginTop="0dp"
-        android:layout_marginBottom="0dp"/>
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        android:textSize="@dimen/buttonTextSize"
+        app:icon="@drawable/share_vector"
+        app:iconGravity="end"
+        app:iconSize="@dimen/iconSizeButton"
+        app:iconTint="@color/settingsIconGray" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/buttonContactSupport"
         android:layout_width="match_parent"
         android:layout_height="61dp"
+        android:layout_marginTop="@dimen/buttonTopAndBottomMargin"
+        android:layout_marginBottom="@dimen/buttonTopAndBottomMargin"
+        android:backgroundTint="@color/white"
+        android:paddingLeft="@dimen/buttonSideMargin"
+        android:paddingRight="@dimen/buttonSideMargin"
         android:text="@string/Contact_the_support"
-        android:textColor="#000000"
-        android:backgroundTint="#ffffff"
-        android:layout_marginTop="0dp"
-        android:layout_marginBottom="0dp"/>
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        android:textSize="@dimen/buttonTextSize"
+        app:icon="@drawable/support_vector"
+        app:iconGravity="end"
+        app:iconSize="@dimen/iconSizeButton"
+        app:iconTint="@color/settingsIconGray" />
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/buttonUserAgreement"
         android:layout_width="match_parent"
         android:layout_height="61dp"
+        android:layout_marginTop="@dimen/buttonTopAndBottomMargin"
+        android:layout_marginBottom="@dimen/buttonTopAndBottomMargin"
+        android:backgroundTint="@color/white"
+        android:paddingLeft="@dimen/buttonSideMargin"
+        android:paddingRight="@dimen/buttonSideMargin"
         android:text="@string/User_agreement"
-        android:textColor="#000000"
-        android:backgroundTint="#ffffff"
-        android:layout_marginTop="0dp"
-        android:layout_marginBottom="0dp"/>
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        android:textSize="@dimen/buttonTextSize"
+        app:icon="@drawable/arrow_forward_vector"
+        app:iconGravity="end"
+        app:iconSize="@dimen/iconSizeButton"
+        app:iconTint="@color/settingsIconGray" />
 
 </LinearLayout>

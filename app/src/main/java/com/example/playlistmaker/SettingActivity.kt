@@ -9,7 +9,7 @@ class SettingsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_settings)
-        val buttonReturn = findViewById<Button>(R.id.button1)
+        val buttonReturn = findViewById<Button>(R.id.buttonBack)
         buttonReturn.setOnClickListener {
             val returnIntent = Intent(this, MainActivity::class.java)
             startActivity(returnIntent)
