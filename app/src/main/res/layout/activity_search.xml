@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorSecondary"
+    android:theme="@style/Theme.PlaylistMaker"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:layout_marginTop="0dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonBack"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="17"
+            android:backgroundTint="?attr/colorSecondary"
+            app:icon="@drawable/back_button_vector"
+            app:iconPadding="10dp"
+            app:iconSize="24dp"
+            app:iconTint="?attr/colorOnSecondary" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="82"
+            android:gravity="center"
+            android:text="@string/Settings"
+            android:textColor="?attr/colorOnSecondary"
+            android:textAlignment="viewStart"
+            android:textSize="26sp"
+            tools:ignore="RtlCompat" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/searchBar"
+        app:cornerRadius="@dimen/buttonRadius"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="#E6E8EB"
+        android:drawableStart="@drawable/ic_vector"
+        android:ellipsize="none"
+        android:hint="@string/SearchHint"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:drawablePadding = "8dp"
+        android:drawableTint="#AEAFB4"
+        android:inputType="text"
+        android:lines="1"
+        android:maxLength="30"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:textColor="#000000"
+        android:textColorHint="#AEAFB4"
+        android:textCursorDrawable="@drawable/cursor"
+        app:iconTint="#AEAFB4"/>
+    <ImageView
+        android:id="@+id/clearIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cross"
+        android:layout_gravity="end"
+        android:paddingEnd="24dp"
+        android:paddingTop="10dp"
+        app:tint="#AEAFB4"
+        android:visibility="gone" />
+</LinearLayout>

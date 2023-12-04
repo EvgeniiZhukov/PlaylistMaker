@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorSecondary"
+    android:theme="@style/Theme.PlaylistMaker"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:layout_marginTop="0dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonBack"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="17"
+            android:backgroundTint="?attr/colorSecondary"
+            app:icon="@drawable/back_button_vector"
+            app:iconPadding="10dp"
+            app:iconSize="24dp"
+            app:iconTint="?attr/colorOnSecondary" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="82"
+            android:gravity="center"
+            android:text="@string/Settings"
+            android:textColor="?attr/colorOnSecondary"
+            android:textAlignment="viewStart"
+            android:textSize="26sp"
+            tools:ignore="RtlCompat" />
+    </LinearLayout>
+
+
+    <Switch
+        android:id="@+id/switchTheme"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="@dimen/buttonTopAndBottomMargin"
+        android:background="?attr/colorSecondary"
+        android:text="@string/Dark_theme"
+        android:textColor="?attr/colorOnSecondary"
+        android:textSize="@dimen/buttonTextSize"
+        tools:ignore="UseSwitchCompatOrMaterialXml"
+        android:paddingLeft="@dimen/buttonSideMargin"
+        android:paddingRight="@dimen/buttonSideMargin"/>
+
+    <Button
+        style="@style/SettingScreenButtonStyle"
+        android:id="@+id/buttonShareTheApp"
+        android:text="@string/Share_the_app"
+        app:icon="@drawable/share_vector"
+        app:iconGravity="end"
+        app:iconSize="@dimen/iconSizeButton"
+        app:iconTint="?attr/colorSecondaryVariant" />
+
+    <Button
+        style="@style/SettingScreenButtonStyle"
+        android:id="@+id/buttonContactSupport"
+        android:text="@string/Contact_the_support"
+        app:icon="@drawable/support_vector"
+        app:iconGravity="end"
+        app:iconSize="@dimen/iconSizeButton"
+        app:iconTint="?attr/colorSecondaryVariant" />
+
+    <Button
+        style="@style/SettingScreenButtonStyle"
+        android:id="@+id/buttonUserAgreement"
+        android:text="@string/User_agreement"
+        app:icon="@drawable/arrow_forward_vector"
+        app:iconGravity="end"
+        app:iconSize="@dimen/iconSizeButton"
+        app:iconTint="?attr/colorSecondaryVariant" />
+
+</LinearLayout>

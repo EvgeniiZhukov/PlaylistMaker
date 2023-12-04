@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Playlist Maker</string>
+    <string name="Settings">Settings</string>
+    <string name="Media">Media</string>
+    <string name="Search">Search</string>
+    <string name="Dark_theme">Dark theme</string>
+    <string name="Share_the_app">Share the app</string>
+    <string name="Contact_the_support">Contact support</string>
+    <string name="User_agreement">User agreement</string>
+</resources>
