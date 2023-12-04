@@ -3,8 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/backOfMainScreen"
+    android:background="?attr/colorPrimary"
     android:orientation="vertical"
+    android:theme="@style/Theme.PlaylistMaker"
     android:padding="16dp">
 
     <TextView
@@ -14,54 +15,43 @@
         android:layout_marginTop="0dp"
         android:layout_weight="0"
         android:text="@string/app_name"
-        android:textColor="@color/white"
+        android:textColor="?attr/colorOnPrimary"
         android:textSize="22sp" />
 
     <Button
         android:id="@+id/buttonSearch"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
         android:layout_marginTop="40dp"
         android:layout_marginBottom="0dp"
-        android:layout_weight="1"
-        android:backgroundTint="@color/white"
         android:text="@string/Search"
-        android:textColor="@color/buttonTextOrItem"
         app:cornerRadius="@dimen/buttonRadius"
         app:icon="@drawable/ic_vector"
         app:iconGravity="textStart"
         app:iconPadding="@dimen/iconPuddingForButtons"
-        app:iconTint="@color/buttonTextOrItem" />
+        app:iconTint="@color/buttonTextOrItem"
+        style="@style/MainScreenButtonStyle"/>
 
     <Button
         android:id="@+id/buttonMedia"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
         android:layout_marginTop="0dp"
         android:layout_marginBottom="0dp"
-        android:layout_weight="1"
         android:text="@string/Media"
-        android:textColor="@color/buttonTextOrItem"
         app:cornerRadius="@dimen/buttonRadius"
         app:icon="@drawable/library_vector"
         app:iconGravity="textStart"
         app:iconPadding="@dimen/iconPuddingForButtons"
         app:iconTint="@color/buttonTextOrItem"
-        android:backgroundTint="@color/white"/>
+        style="@style/MainScreenButtonStyle"/>
 
     <Button
         android:id="@+id/buttonSettings"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
         android:layout_marginBottom="12dp"
-        android:layout_weight="1"
         android:text="@string/Settings"
-        android:textColor="@color/buttonTextOrItem"
         app:cornerRadius="@dimen/buttonRadius"
         app:icon="@drawable/settings_vector"
         app:iconGravity="textStart"
         app:iconPadding="@dimen/iconPuddingForButtons"
         app:iconTint="@color/buttonTextOrItem"
-        android:backgroundTint="@color/white"/>
+        style="@style/MainScreenButtonStyle"
+        />
 
 </LinearLayout>

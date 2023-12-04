@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="?attr/colorSecondary"
+    android:theme="@style/Theme.PlaylistMaker"
     android:orientation="vertical">
 
     <LinearLayout
@@ -18,11 +19,11 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="17"
-            android:backgroundTint="@color/white"
+            android:backgroundTint="?attr/colorSecondary"
             app:icon="@drawable/back_button_vector"
             app:iconPadding="10dp"
             app:iconSize="24dp"
-            app:iconTint="@color/buttonTextOrItem" />
+            app:iconTint="?attr/colorOnSecondary" />
 
         <TextView
             android:id="@+id/textView2"
@@ -31,6 +32,7 @@
             android:layout_weight="82"
             android:gravity="center"
             android:text="@string/Settings"
+            android:textColor="?attr/colorOnSecondary"
             android:textAlignment="viewStart"
             android:textSize="26sp"
             tools:ignore="RtlCompat" />
@@ -43,65 +45,39 @@
         android:layout_height="61dp"
         android:layout_marginTop="24dp"
         android:layout_marginBottom="@dimen/buttonTopAndBottomMargin"
-        android:background="@color/white"
+        android:background="?attr/colorSecondary"
         android:text="@string/Dark_theme"
+        android:textColor="?attr/colorOnSecondary"
         android:textSize="@dimen/buttonTextSize"
         tools:ignore="UseSwitchCompatOrMaterialXml"
         android:paddingLeft="@dimen/buttonSideMargin"
         android:paddingRight="@dimen/buttonSideMargin"/>
 
     <Button
+        style="@style/SettingScreenButtonStyle"
         android:id="@+id/buttonShareTheApp"
-        android:layout_width="match_parent"
-        android:layout_height="61dp"
-        android:layout_marginTop="@dimen/buttonTopAndBottomMargin"
-        android:layout_marginBottom="@dimen/buttonTopAndBottomMargin"
-        android:backgroundTint="@color/white"
-        android:paddingLeft="@dimen/buttonSideMargin"
-        android:paddingRight="@dimen/buttonSideMargin"
         android:text="@string/Share_the_app"
-        android:textAlignment="viewStart"
-        android:textColor="@color/black"
-        android:textSize="@dimen/buttonTextSize"
         app:icon="@drawable/share_vector"
         app:iconGravity="end"
         app:iconSize="@dimen/iconSizeButton"
-        app:iconTint="@color/settingsIconGray" />
+        app:iconTint="?attr/colorSecondaryVariant" />
 
     <Button
+        style="@style/SettingScreenButtonStyle"
         android:id="@+id/buttonContactSupport"
-        android:layout_width="match_parent"
-        android:layout_height="61dp"
-        android:layout_marginTop="@dimen/buttonTopAndBottomMargin"
-        android:layout_marginBottom="@dimen/buttonTopAndBottomMargin"
-        android:backgroundTint="@color/white"
-        android:paddingLeft="@dimen/buttonSideMargin"
-        android:paddingRight="@dimen/buttonSideMargin"
         android:text="@string/Contact_the_support"
-        android:textAlignment="viewStart"
-        android:textColor="@color/black"
-        android:textSize="@dimen/buttonTextSize"
         app:icon="@drawable/support_vector"
         app:iconGravity="end"
         app:iconSize="@dimen/iconSizeButton"
-        app:iconTint="@color/settingsIconGray" />
+        app:iconTint="?attr/colorSecondaryVariant" />
 
     <Button
+        style="@style/SettingScreenButtonStyle"
         android:id="@+id/buttonUserAgreement"
-        android:layout_width="match_parent"
-        android:layout_height="61dp"
-        android:layout_marginTop="@dimen/buttonTopAndBottomMargin"
-        android:layout_marginBottom="@dimen/buttonTopAndBottomMargin"
-        android:backgroundTint="@color/white"
-        android:paddingLeft="@dimen/buttonSideMargin"
-        android:paddingRight="@dimen/buttonSideMargin"
         android:text="@string/User_agreement"
-        android:textAlignment="viewStart"
-        android:textColor="@color/black"
-        android:textSize="@dimen/buttonTextSize"
         app:icon="@drawable/arrow_forward_vector"
         app:iconGravity="end"
         app:iconSize="@dimen/iconSizeButton"
-        app:iconTint="@color/settingsIconGray" />
+        app:iconTint="?attr/colorSecondaryVariant" />
 
 </LinearLayout>
